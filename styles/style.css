@@ -1,0 +1,772 @@
+body {
+    margin: 0;
+}
+
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0.9em;
+    padding-right: 1.9em;
+    z-index: 1;
+    background: linear-gradient(180deg, rgb(1, 97, 114) 10%, rgba(1, 97, 114, 0.57) 65%, rgba(55, 192, 219, 0) 100%);
+}
+
+.nav-up {
+    top: -3em;
+}
+
+.search-bar-container {
+    background: white;
+    padding: 0.15em;
+    border-radius: 0.9em;
+    margin-left: 1.2em;
+    transition: ease-in-out 0.3s;
+}
+
+.search-bar-container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+}
+
+#search {
+    background: rgba(255,255,255,0);
+    border: 0;
+    padding: 0.25em;
+    margin-left: 0.45em;
+}
+
+.fa-search {
+    margin-right: 0.45em;
+}
+
+.header-label {
+    color: white;
+    font-size: 1.0em;
+}
+
+.guide-label {
+    font-weight: bold;
+}
+
+.page-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-grid {
+    width: 100%;
+    background: white;
+    height: 100%;
+    position: relative;
+}
+
+.main-photo {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+}
+
+.header-button{
+    background: rgba(255,255,255,0);
+    border: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 0.9em;
+    transition: ease-in-out 0.3s;
+}
+
+.gallery {
+    position: relative;
+    min-height: 250px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.button-and-slider-container {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    margin-bottom: 1em;
+}
+
+.fa-circle {
+    color: white;
+    text-shadow: 2px 0 black;
+    transition: ease-in-out 0.3s;
+}
+
+.slider {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.tranzition-image {
+    position: absolute;
+    max-height: 100px;
+    width: 100%;
+    bottom: -0.8em;
+}
+
+.description-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    top: 30%;
+    left: 0;
+    width: 100%;
+}
+
+.cover-page-description {
+    color: white;
+    text-shadow: 2px 0 black;
+    margin-left: 10%;
+}
+
+.travel-guide-description {
+    font-size: 3.2em;
+    font-weight: bold;
+}
+
+.current-image-title {
+    font-size: 1.4em;
+    font-weight: 80;
+    margin-top: 0.25em;
+    max-width: 30%; 
+}
+
+.start-of-description {
+    font-weight: bold;
+}
+
+.place-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    background: #f9f9f9;
+    height: 300px;
+}
+
+.recommended-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+    box-shadow: 5px 5px 6px gray;
+    transition: ease-in-out 0.3s;
+    margin: 1em;
+}
+
+.hover-state:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.recommended-card-review {
+    max-width: 200px;
+    margin: 3em;
+    padding: 2em 0;
+}
+
+.selected-card {
+    background: #f9f9f9;
+    position: absolute;
+    z-index: 2;
+    transform: scale(1.3);
+    margin: 0 auto;
+}
+
+.fa-star {
+    font-size: 1.1em;
+    color: #cbce24;
+    text-shadow: 2px 2px 2px black;
+}
+
+.star-container {
+    margin-top: 1em;
+    margin-left: 10%;
+}
+
+.suggested-spot-photo {
+    max-width: 250px;
+}
+
+.recommended-title {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.suggested-place-description {
+    color: white;
+    text-shadow: 2px 2px 2px black;  
+    margin-left: 10%; 
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+    width: 250px;
+    background: rgb(225,225,225,0.4);
+    padding: 1em 0;
+}
+
+.exit-button {
+    position: absolute;
+    top: 0.9em;
+    right: 0.9em;
+}
+
+.number-of-visits {
+    margin-top: 0.25em;
+    font-size: 0.7em;
+}
+
+.location-maps {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20em;
+    padding: 1em;
+    box-shadow: 2px 2px 2px gray;
+    background: #f9f9f9;
+
+}
+
+.map-view-title {
+    align-self: center;
+    font-size: 1.5em;
+    margin-bottom: 0em;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.menu-and-map-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.map-selection {
+    display: flex;
+    flex-direction: column; 
+}
+
+.map-view {
+    margin: 2em 2em;
+    width: 350px;
+    height: 350px;
+}
+
+.country-map-name {
+    background: rgba(255,255,255,0);
+    border: 0;
+    color: black;
+    text-shadow: 2px 2px 2px gray;
+    margin: 1em;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.country-menu-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    width: 100%;
+    margin: 0 2em;
+}
+
+.country-name {
+    font-size: 1.2em;
+    background: rgb(225,225,225,0);
+    border: 0;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.city-name {
+    font-size: 1.1em;
+    background: rgb(225,225,225,0);
+    border: 0;
+    text-shadow: 2px 2px 2px gray;
+    text-align: left;
+    transition: ease-in-out 0.3s;
+}
+
+.country-map-name {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none;
+}
+
+.subscribe-container {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+.submit-button {
+    background-color: rgba(255, 255, 255, 0.404);
+    border: 0;
+    color: black;
+    font-weight: bold;
+    font-style: italic;  
+    text-shadow: 2px 2px 5px gray;
+    transition: ease-in-out 0.3s;
+}
+
+.planer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.empty-planer-message {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    align-self: center;
+}
+
+.planer-button {
+    background-color: rgba(255,255,255,0);
+    border: 0;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1em;
+    font-style: oblique;
+    margin: 0.25em;
+    margin-top: 1em;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.planer-title {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.your-location-list {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background: rgb(225,225,225,0.5);
+    box-shadow: 2px 2px 4px gray;
+}
+
+.location-info {
+    display: flex;
+    align-items: center;
+}
+
+.location-info-label {
+    margin: 0 5em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.subscribe-label {
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px gray;
+    margin-bottom: 0.5em;
+}
+
+.newsletter-label {
+    font-size: 0.9em;
+    text-shadow: 2px 2px 4px black;
+    margin-bottom: 2em;
+    color: rgb(48, 48, 48);
+}
+
+.e-mail-input {
+    padding: 0.25em 0.5em;
+    margin-bottom: 0.6em;
+}
+
+.more-offers-button {
+    background-color: rgba(255,255,255,0);
+    border: 0;
+    text-shadow: 2px 2px 2px gray;
+    font-size: 1.1em;
+    margin-top: 4em;
+    transition: ease-in-out 0.3s;
+}
+
+.all-offers-container {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20em;
+    padding: 0 2em;
+}
+
+.offer-image {
+    max-width: 250px;
+}
+
+.offer-description {
+    max-width: 250px;;
+}
+
+.offer-card {
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 6px gray;
+    margin: 0.5em;
+    margin-bottom: 2em;
+    background: #f9f9f9;
+}
+
+.planer-background-image {
+    position: fixed;
+    bottom: 0;  
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.offer-description {
+    margin: 0.5em;
+    align-content: stretch;
+    text-align: justify;
+}
+
+.add-offer-button {
+    position: absolute;
+    right: 3em;
+    bottom: 0;
+    border: 0;
+    padding: 0.25em;
+    font-size: 1.1em;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+    background: rgb(225,225,225,0);
+    font-style: italic;
+    transition: ease-in-out 0.3s;   
+}
+
+.offer-text-and-button-container p {
+    margin-top: 1.5em 0.5em;
+}
+
+.offer-text-and-button-container .add-offer-button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.offer-text-and-button-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.offer-card-title {
+    position: absolute;
+    top: 0;
+    align-self: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-info {
+    text-align: left;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planer-delete-button {
+    color: white;   
+    margin-right: 2em;
+    text-shadow: 2px 2px 2px black;
+}
+
+.background-cover {
+    background: rgba(170, 167, 167, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.cover-quote-title {
+    font-size: 1.4em;
+    font-weight: 80;
+    margin-top: 0.25em;
+    max-width: 30%; 
+    margin-top: 3em;
+}
+
+footer {
+    background:   linear-gradient(180deg, rgb(0, 65, 77) 10%, rgba(1, 97, 114, 0.87) 65%, rgba(1, 97, 114) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.footer-row {
+    display: flex;
+}
+
+.social-media-logo {
+    margin-right: 2em;
+    padding: 0.5em;
+}
+
+.site-info-label {
+    margin-left: 2em;
+    padding: 0.5em;
+}
+
+.copyright-label {
+    padding: 0.5em;
+    color: white;
+}
+
+.fa-facebook-square {
+    font-size: 1.25em;
+    color: #06005a;
+    margin: 0.25em;
+}
+
+.fa-twitter {
+    font-size: 1.25em;
+    color: #1f96f8;
+    margin: 0.25em;
+}
+
+.fa-instagram {
+    font-size: 1.25em;
+    margin: 0.25em;
+    font-weight: bold;
+}
+
+.site-info-label {
+    margin: 0.25em;
+    color: white;
+}
+
+.button-focus:focus {
+    outline: 0;
+}
+
+@media screen and (max-width: 390px) {
+    .copyright-label {
+        font-size: 0.7em;
+        text-align: center;
+    }
+    .site-info-label {
+        display: none;
+    }
+
+    .social-media-logo {
+        margin-right: 0;
+    }
+
+    .button-and-slider-container {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .cover-quote-title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .place-reviews {
+        height: 100%;;
+    }
+
+    .location-maps {
+        margin-top: unset;
+    }
+
+    .all-offers-container {
+        margin-top: 2em;
+    }
+
+    .cover-page-description {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #search {
+        display: none;
+    } 
+
+    .fa-search {
+        margin-left: 0.25em;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .recommended-card-review {
+        padding: unset;
+        margin: 1em;
+        padding-top: 2em;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .map-selection {
+        display: none;
+    }
+
+    .drop-down-menu {
+        overflow: hidden;
+        display: block;
+        margin-top: 2em;
+        max-width: 200px;
+        align-self: center;
+        z-index: 1;;
+    }
+
+    .map-view {
+        max-width: 250px;
+        max-height: 250px;
+        margin: unset;
+    }
+
+    .cover-page-description {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .suggested-spot-photo {
+        max-width: 200px;
+    }
+
+    .selected-card {
+        transform: scale(1);
+    }
+
+    .card-description {
+        max-width: 200px;
+        bottom: unset;
+        top: 245px;
+    }
+
+    .page-title {
+        display: none;
+    }
+
+    .offer-description {
+        font-size: 0.8em;   
+    }
+
+    .offer-image {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .page-button-container {
+        display: none;
+    }  
+
+    .right-header {
+        position: relative;
+        min-height: 20px;
+        width: 100%;
+    }
+
+    .search-bar-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .cover-page-description {
+        max-width: unset;
+        margin: 0.25em 1em;
+    }   
+
+    .offer-image {
+        margin: 1em;
+    }
+
+    .offer-card {
+       flex-direction: column;
+    }
+
+    .add-offer-button {
+        right: unset;
+        align-self: center;
+        margin-bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .selected-card {
+        position: unset;
+    }
+
+    .card {
+        margin: 0.25em;
+        max-width: 200px;
+        grid-auto-flow: unset;
+    }
+
+    .recommended-card-review {
+        padding-top: unset;
+    }
+}

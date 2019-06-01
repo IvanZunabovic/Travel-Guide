@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Travel Guide</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/style.css"/>
+        <template id="planer-item">
+            <div class="row">
+                <i class="fas fa-times planer-delete-button hover-state"></i>
+                <div class="location item-info"></div>
+            </div>
+        </template>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="page-button-container">
+                    <button class="header-button hover-state button-focus">Recommended</button>
+                    <button class="header-button hover-state button-focus">Map</button>
+                    <button class="header-button hover-state button-focus">Planer</button>
+                    <button class="header-button hover-state button-focus">Newsletter</button>
+                </div>
+                <div class="right-header">
+                    <div class="page-title">
+                            <label class="header-label">Travel</label>
+                            <label class="header-label guide-label">GUIDE</label>
+                    </div>
+                    <div class="search-bar-container">
+                        <input id="search" type="text" class="button-focus" placeholder="Search"/>
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-grid">
+            <div class="gallery">
+                <img src="images/cover_image.jpg" class="main-photo">
+                <img src="images/paris.jpg" class="main-photo hidden">
+                <img src="images/dubai-skyscrapers.jpg" class="main-photo hidden">
+                <img src="images/niagara-falls.jpg" class="main-photo hidden">
+                <img src="images/venice.jpg" class="main-photo hidden">
+                <div class="button-and-slider-container">
+                    <div class="slider">
+                        <i class="fas fa-circle hover-state"></i>
+                        <i class="far fa-circle hover-state"></i>
+                        <i class="far fa-circle hover-state"></i>
+                        <i class="far fa-circle hover-state"></i>
+                        <i class="far fa-circle hover-state"></i>
+                    </div>
+                </div>
+                <div class="description-container">
+                    <label class="cover-page-description travel-guide-description">Travel Guide</label>
+                    <p class="current-image-title cover-page-description"><i class="start-of-description">Thailand beaches</i> add some of these tropical beauties to your travel wish list</p>
+                    <p class="cover-page-description cover-quote-title">Better to see something once than hear about it a thousand times</p>
+                </div>
+                <img src="images/tranzition-image.png" class="tranzition-image">
+            </div>
+            <div id="recommended" class="place-reviews">
+                <label class="recommended-title">RECOMMENDED SPOTS</label>
+                <div class="recommended-cards">
+                    <div class="card hover-state">
+                        <img src="images/london.jpg" class="suggested-spot-photo">
+                        <i class="fas fa-times exit-button hover-state hidden"></i>
+                        <div class="recommended-card-review hidden">
+                            <p>John Miller: "Extraordinary experience"</p>
+                            <p>Tina Johnson: "Wonderful stop"</p>
+                            <p>Marc Clarkson: "We spent a couple of hours of free time in London. This is a very nice city to visit and there is plenty to see."</p>
+                        </div>
+                        <div class="card-description">
+                            <label class="suggested-place-description">London</label>
+                            <label class="suggested-place-description number-of-visits">1950 visits</label>
+                            <div class="star-container">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card hover-state">
+                            <img src="images/hawaii.jpg" class="suggested-spot-photo">
+                            <i class="fas fa-times exit-button hover-state hidden"></i>
+                            <div class="recommended-card-review hidden">
+                                <p>Jake Arnold: "Beautiful, must visit destination"</p>
+                                <p>Trent Gomez: "Beautiful place people were so friendly and accommodating."</p>
+                                <p>Alex Robertson: "Fabulous! Volcanoes, beautiful scenery, interesting flora and fauna, a rich cultural experience and blue seas."</p>
+                            </div>
+                            <div class="card-description">
+                                <label class="suggested-place-description">Hawaii</label>
+                                <label class="suggested-place-description number-of-visits">2348 visits</label>
+                                <div class="star-container">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card hover-state">
+                        <img src="images/new_york.jpg" class="suggested-spot-photo">
+                        <i class="fas fa-times exit-button hover-state hidden"></i>
+                        <div class="recommended-card-review hidden">
+                            <p>Matias Walker: "What I like about New York city is that there are endless possibilities."</p>
+                            <p>Manuel Jefferson: "I do not like the density, crowds and lack of transportation infrastructure."</p>
+                            <p>Tony Ferguson :"New York is a great place full of opportunities."</p>
+                        </div>
+                        <div class="card-description">
+                            <label class="suggested-place-description">New York</label>
+                            <label class="suggested-place-description number-of-visits">1897 visits</label>
+                            <div class="star-container">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="background-cover hidden"></div>
+                </div>
+                <button class="more-offers-button hover-state button-focus">Show popular offers</button>
+            </div>
+            <div class="all-offers-container">
+                <div class="offer-card">
+                    <img src="images/london.jpg" class="offer-image">
+                    <div class="offer-text-and-button-container">
+                        <label class="offer-card-title">London</label>
+                        <p class="offer-description">London's inherent uniqueness and mix of cultures have made it one of the most visited cities in the world. Its diverse bundle of boroughs are often like mini cities in their own right, with each one offering something different to the last.
+                                London's iconic skyline is an eclectic combination of instantly recognisable landmarks, from the historic Tower of London to the ultra-modern skyscrapers of The Shard and 20 Fenchurch (better known as 'The Walkie-Talkie'). A walk through the ‘Square Mile’ immerses you in the original Roman settlement, with parts of the ancient defensive wall still visible.</p>
+                        <button class="add-offer-button button-focus">Add to planer</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="images/new_york.jpg" class="offer-image">
+                    <div class="offer-text-and-button-container">
+                        <label class="offer-card-title">New York</label>
+                        <p class="offer-description">Life, liberty and the pursuit of happiness – no other city quite captures the United States of America’s founding principals. Ripe with anticipation, it’s a city that reveals something new and unexpected at every turn. The sense of constant renewal is dazzling. Tribeca has gone from downtown-dive to uber-chic in the space of a lifetime; while areas like Chelsea and the East Village appear to endure eternally. Manhattan’s grid-like layout makes it easy to navigate. Enjoy an NYC-style bagel and morning jaunt around Central Park, followed by an afternoon exploring the Met and Guggenheim museums.</p>    
+                        <button class="add-offer-button button-focus">Add to planer</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="images/hawaii.jpg" class="offer-image">
+                    <div class="offer-text-and-button-container">
+                        <label class="offer-card-title">Hawaii</label>
+                        <p class="offer-description">Discover why the six Islands of Aloha are home to treasures unlike any other on earth: The dramatic cliffs of the Napali Coast on Kauai. The vibrant shores of Waikiki Beach on Oahu. The miles of white sands of Papohaku Beach on Molokai. The dolphin-friendly waters of Hulopoe Bay on Lanai. The summit of Haleakala on Maui. The primal energy of Hawaii Volcanoes National Park on the island of Hawaii. It won’t be easy choosing which island to visit on your first trip to Hawaii, but you’ll find there are no wrong answers.</p>    
+                        <button class="add-offer-button button-focus">Add to planer</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="images/thailand.jpg" class="offer-image">
+                    <div class="offer-text-and-button-container">
+                        <label class="offer-card-title">Thailand</label>
+                        <p class="offer-description">While we usually prefer to travel around countries during the shoulder seasons, we tend to also plan our trips around certain celebrations and festivals that we want to experience. In Thailand, Loi Krathong and Songkran are two festivals in Thailand that we highly recommend people to experience at least once. Imagine looking up at the sky as thousands of paper lanterns are set free in the sky and trust me when I say that seeing it in person is truly a magical experience.</p>    
+                        <button class="add-offer-button hover-state button-focus">Add to planer</button>
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="location-maps">
+                <label  class="map-view-title">Offers map locations</label>
+                <select class="drop-down-menu hidden">
+                    <option value="London" class="drop-down-option">London</option>
+                    <option value="Manchester" class="drop-down-option">Manchester</option>
+                    <option value="Paris" class="drop-down-option">Paris</option>
+                    <option value="Roma" class="drop-down-option">Roma</option>
+                    <option value="Venice" class="  ">Venice</option>
+                    </select>
+                <div class="menu-and-map-container">
+                    <div class="map-selection">
+                            <div class="country-menu-container">
+                                <button class="country-name button-focus">United Kingdom</button>
+                                <button class="city-name hover-state button-focus">London</button>
+                                <button class="city-name hover-state button-focus">Manchester</button>
+                            </div>
+                            <div class="country-menu-container">
+                                <button class="country-name button-focus">France</button>
+                                <button class="city-name hover-state button-focus">Paris</button>
+                            </div>
+                            <div class="country-menu-container">
+                                <button class="country-name button-focus">Italy</button>
+                                <button class="city-name hover-state button-focus">Roma</button>
+                                <button class="city-name hover-state button-focus">Venice</button>
+                            </div>
+                    </div>
+                    <img src="images/World_map.png" class="map-view">
+                </div>
+            </div>
+        </div>
+        <div id="planer" class="planer-container">
+            <div class="your-location-list">
+                <label class="planer-title">YOUR PLANER</label>
+                <label class="empty-planer-message">EMPTY</label>
+                <button class="planer-button hover-state hidden button-focus">Send to email</button>
+            </div>
+        </div>
+        <div id="newsletter" class="subscribe-container">
+                <label class="subscribe-label">SUBSCRIBE</label>
+                <label class="newsletter-label sign-up-label">SIGN UP TO OUR NEWSLETTER</label>
+                <label class="newsletter-label subscribed-label hidden">SUBSCRIBED</label>
+                <input type="email" placeholder="e-mail" class="e-mail-input">
+                <button class="submit-button hover-state button-focus">SUBMIT</button>
+        </div>
+        <img src="images/niagara-falls.jpeg" class="planer-background-image">
+        <footer>
+            <div class="footer-row">
+                <div class="social-media-logo">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="site-info-label">
+                    <label>Blog</label>
+                    <label>Guides</label>
+                    <label>Visa</label>
+                    <label>FAQ</label>
+                </div>
+            </div>
+            <label class="copyright-label">Travel Guide Global Private Ltd. © 2019 all rights reserved.</label>
+        </footer>
+        <script src="scripts/map.js"></script>
+        <script src="scripts/offers.js"></script>
+        <script src="scripts/header.js"></script>
+        <script src="scripts/gallery.js"></script>
+        <script src="scripts/recommended.js"></script>
+    </body>
+</html>
