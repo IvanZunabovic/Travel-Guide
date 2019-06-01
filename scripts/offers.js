@@ -1,3 +1,4 @@
+//Displaying more offers
 var showMoreOffersButton = document.querySelector(".more-offers-button");
 showMoreOffersButton.addEventListener("click", handleShowMoreOffers);
 
@@ -8,13 +9,13 @@ function handleShowMoreOffers(e) {
 
     if(offersContainer.style.display == "flex") {
         offersContainer.style.display = "none";
-        mapViewContainer.style.marginTop = "20em";
+        //mapViewContainer.style.marginTop = "20em";
         e.currentTarget.innerHTML = "Show popular offers";
     }
 
     else {
         offersContainer.style.display = "flex";
-        mapViewContainer.style.marginTop = "3em";
+        //mapViewContainer.style.marginTop = "3em";
         e.currentTarget.innerHTML = "Hide popular offers";
     }
 }
